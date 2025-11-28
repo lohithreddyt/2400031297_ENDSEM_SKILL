@@ -1,15 +1,15 @@
 
 let students = [
     {
-        name: "Alice",
+        name: "Ajay",
         marks: { Math: 85, Science: 90, English: 78 }
     },
     {
-        name: "Bob",
+        name: "Lohith",
         marks: { Math: 70, Science: 88, English: 92 }
     },
     {
-        name: "Charlie",
+        name: "Charith",
         marks: { Math: 95, Science: 60, English: 82 }
     }
 ];
