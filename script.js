@@ -1,4 +1,4 @@
-// Updated students with 3 subjects each
+
 let students = [
     {
         name: "Alice",
@@ -14,10 +14,10 @@ let students = [
     }
 ];
 
-let tableData = [];  // will store flattened student-subject-score rows
+let tableData = []; 
 let sortDirection = true;
 
-// Convert each student's subject marks into rows
+
 function processStudentData() {
     tableData = [];
 
@@ -73,6 +73,6 @@ function updateTable() {
     loadTable(filtered);
 }
 
-// Prepare table data on start
+
 processStudentData();
 loadTable(tableData);
