@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Marks Table</h2>
+
+<div class="filters">
+    <label>Subject:</label>
+    <select id="subjectFilter">
+        <option value="">All</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+    </select>
+
+    <label>Min Score:</label>
+    <input type="number" id="minScore" placeholder="0">
+
+    <label>Max Score:</label>
+    <input type="number" id="maxScore" placeholder="100">
+
+    <button onclick="updateTable()">Apply</button>
+</div>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th onclick="sortTable('name')">Student Name ⇅</th>
+            <th onclick="sortTable('subject')">Subject ⇅</th>
+            <th onclick="sortTable('score')">Score ⇅</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
